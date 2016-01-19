@@ -6,4 +6,8 @@ describe("simplifyText", function () {
   it("removes spaces from text", function () {
     expect(simplifyText(" ")).to.equal("");
   });
+
+  it("removes special characters from string", function() {
+    expect(simplifyText("won't")).to.equal("wont");
+  })
 });
