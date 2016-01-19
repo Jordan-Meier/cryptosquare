@@ -9,5 +9,11 @@ describe("simplifyText", function () {
 
   it("removes special characters from string", function() {
     expect(simplifyText("won't")).to.equal("wont");
-  })
+  });
+});
+
+describe("gridText", function () {
+  it("it measures the length of the text and then takes the square root of the total characters in the text.", function () {
+    expect(gridText("flapjacks")).to.equal(3);
+  });
 });

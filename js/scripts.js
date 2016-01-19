@@ -4,3 +4,15 @@ var simplifyText = function (message) {
   message = message.replace(/[^A-Z0-9]/ig, "");
   return message;
 }
+
+
+var cryptosquare = function (message) {
+  message = simplifyText(message);
+  return message;
+}
+
+var gridText = function (message) {
+  var length = message.length;
+  var squareRoot = Math.sqrt(length);
+  return squareRoot;
+}
