@@ -6,13 +6,17 @@ var simplifyText = function (message) {
 }
 
 
-var cryptosquare = function (message) {
-  message = simplifyText(message);
-  return message;
-}
+
 
 var gridText = function (message) {
   var length = message.length;
   var squareRoot = Math.sqrt(length);
   return squareRoot;
+}
+
+
+
+var cryptosquare = function (message) {
+  message = simplifyText(message);
+  return message;
 }
